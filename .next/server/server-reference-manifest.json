@@ -1,0 +1,32 @@
+{
+  "node": {
+    "40c241e8851bdfb1da7e931a500ae049984cefbee2": {
+      "workers": {
+        "app/(payload)/admin/[[...segments]]/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.5.6_react-dom@19.0.0_react@19.0.0__react@19.0.0_sass@1.77.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmildfire%2Frepos%2FAADS%2Fexample-payload%2Fmulti-tenant-example%2Fmulti-tenant-example%2Fsrc%2Fapp%2F(payload)%2Flayout.tsx%22%2C%5B%7B%22id%22%3A%2240c241e8851bdfb1da7e931a500ae049984cefbee2%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_ACTION_0%22%2C%22filename%22%3A%22app%2F(payload)%2Flayout.tsx%22%7D%5D%5D%2C%5B%22%2Fhome%2Fmildfire%2Frepos%2FAADS%2Fexample-payload%2Fmulti-tenant-example%2Fmulti-tenant-example%2Fnode_modules%2F.pnpm%2F%40payloadcms%2Bnext%403.64.0_%40types%2Breact%4019.0.1_graphql%4016.12.0_monaco-editor%400.54.0_next%401_fbebdb68d675befed4124b29602e4e61%2Fnode_modules%2F%40payloadcms%2Fnext%2Fdist%2Flayouts%2FRoot%2Findex.js%22%2C%5B%7B%22id%22%3A%22606628903c8efcb94c7bd1974caa71ffa8c22a2a58%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_ACTION_0%22%2C%22filename%22%3A%22..%2Fnode_modules%2F.pnpm%2F%40payloadcms%2Bnext%403.64.0_%40types%2Breact%4019.0.1_graphql%4016.12.0_monaco-editor%400.54.0_next%401_fbebdb68d675befed4124b29602e4e61%2Fnode_modules%2F%40payloadcms%2Fnext%2Fdist%2Flayouts%2FRoot%2Findex.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(payload)/admin/[[...segments]]/page": "rsc"
+      },
+      "filename": "app/(payload)/layout.tsx",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    },
+    "606628903c8efcb94c7bd1974caa71ffa8c22a2a58": {
+      "workers": {
+        "app/(payload)/admin/[[...segments]]/page": {
+          "moduleId": "(rsc)/./node_modules/.pnpm/next@15.5.6_react-dom@19.0.0_react@19.0.0__react@19.0.0_sass@1.77.4/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fhome%2Fmildfire%2Frepos%2FAADS%2Fexample-payload%2Fmulti-tenant-example%2Fmulti-tenant-example%2Fsrc%2Fapp%2F(payload)%2Flayout.tsx%22%2C%5B%7B%22id%22%3A%2240c241e8851bdfb1da7e931a500ae049984cefbee2%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_ACTION_0%22%2C%22filename%22%3A%22app%2F(payload)%2Flayout.tsx%22%7D%5D%5D%2C%5B%22%2Fhome%2Fmildfire%2Frepos%2FAADS%2Fexample-payload%2Fmulti-tenant-example%2Fmulti-tenant-example%2Fnode_modules%2F.pnpm%2F%40payloadcms%2Bnext%403.64.0_%40types%2Breact%4019.0.1_graphql%4016.12.0_monaco-editor%400.54.0_next%401_fbebdb68d675befed4124b29602e4e61%2Fnode_modules%2F%40payloadcms%2Fnext%2Fdist%2Flayouts%2FRoot%2Findex.js%22%2C%5B%7B%22id%22%3A%22606628903c8efcb94c7bd1974caa71ffa8c22a2a58%22%2C%22exportedName%22%3A%22%24%24RSC_SERVER_ACTION_0%22%2C%22filename%22%3A%22..%2Fnode_modules%2F.pnpm%2F%40payloadcms%2Bnext%403.64.0_%40types%2Breact%4019.0.1_graphql%4016.12.0_monaco-editor%400.54.0_next%401_fbebdb68d675befed4124b29602e4e61%2Fnode_modules%2F%40payloadcms%2Fnext%2Fdist%2Flayouts%2FRoot%2Findex.js%22%7D%5D%5D%5D&__client_imported__=!",
+          "async": true
+        }
+      },
+      "layer": {
+        "app/(payload)/admin/[[...segments]]/page": "rsc"
+      },
+      "filename": "../node_modules/.pnpm/@payloadcms+next@3.64.0_@types+react@19.0.1_graphql@16.12.0_monaco-editor@0.54.0_next@1_fbebdb68d675befed4124b29602e4e61/node_modules/@payloadcms/next/dist/layouts/Root/index.js",
+      "exportedName": "$$RSC_SERVER_ACTION_0"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "xEiR+cga227WoQSsMgTGLJidsGd8cRCCxq5qNKRp8Q4="
+}

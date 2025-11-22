@@ -1,0 +1,49 @@
+.
+├── next.config.mjs
+├── next-env.d.ts
+├── package.json
+├── package.json.backup
+├── package-lock.json
+├── project-structure.txt
+├── README.md
+├── src
+│   ├── access
+│   │   └── isSuperAdmin.ts
+│   ├── app
+│   │   ├── (app)
+│   │   │   ├── index.scss
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   ├── tenant-domains
+│   │   │   └── tenant-slugs
+│   │   ├── components
+│   │   │   ├── Login
+│   │   │   └── RenderPage
+│   │   └── (payload)
+│   │       ├── admin
+│   │       ├── api
+│   │       ├── custom.scss
+│   │       └── layout.tsx
+│   ├── collections
+│   │   ├── Pages
+│   │   │   ├── access
+│   │   │   ├── hooks
+│   │   │   └── index.ts
+│   │   ├── Tenants
+│   │   │   ├── access
+│   │   │   └── index.ts
+│   │   └── Users
+│   │       ├── access
+│   │       ├── endpoints
+│   │       ├── hooks
+│   │       └── index.ts
+│   ├── payload.config.ts
+│   ├── payload-types.ts
+│   ├── seed.ts
+│   └── utilities
+│       ├── extractID.ts
+│       ├── getCollectionIDType.ts
+│       └── getUserTenantIDs.ts
+└── tsconfig.json
+
+24 directories, 23 files

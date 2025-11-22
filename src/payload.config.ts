@@ -21,6 +21,44 @@ const dirname = path.dirname(filename)
 export default buildConfig({
   admin: {
     user: 'users',
+    livePreview: {
+        url: async ({ data, locale, req }) => {
+          // Debug: log what we're receiving
+          console.log('🔍 Live Preview URL - tenant data:', data?.tenant)
+          
+          let tenantSlug = null
+          
+          // Handle different tenant data formats
+          if (data?.tenant) {
+            if (typeof data.tenant === 'object' && data.tenant !== null) {
+              // Tenant is populated object
+              tenantSlug = data.tenant.slug
+            } else if (typeof data.tenant === 'string' || typeof data.tenant === 'number') {
+              // Tenant is just an ID - we need to fetch it
+              const payload = await req.payload
+              const tenantDoc = await payload.findByID({
+                collection: 'tenants',
+                id: data.tenant,
+              })
+              tenantSlug = tenantDoc?.slug
+            }
+          }
+          
+          const pageSlug = data?.slug || 'home'
+          
+          console.log('🔍 Live Preview URL - resolved tenant slug:', tenantSlug)
+          console.log('🔍 Live Preview URL - page slug:', pageSlug)
+          
+          if (!tenantSlug) {
+            // Fallback: use first tenant's slug
+            console.warn('⚠️  No tenant slug found, using fallback')
+            return `http://localhost:3000/api/preview?slug=${pageSlug}&tenant=gold`
+          }
+          
+          return `http://localhost:3000/api/preview?slug=${pageSlug}&tenant=${tenantSlug}`
+        },
+        collections: ['pages'],
+      },
   },
   collections: [Pages, Users, Tenants],
   // db: mongooseAdapter({
@@ -32,8 +70,28 @@ export default buildConfig({
     },
   }),
   onInit: async (args) => {
-    if (process.env.SEED_DB) {
-      await seed(args)
+    console.log('🔍 onInit triggered')
+    console.log('🔍 SEED_DB value:', process.env.SEED_DB)
+    
+    if (process.env.SEED_DB === 'true') {
+      // Check if database is already seeded
+      const existingTenants = await args.find({
+        collection: 'tenants',
+        limit: 1,
+      })
+      
+      if (existingTenants.totalDocs > 0) {
+        console.log('ℹ️  Database already seeded (found existing tenants)')
+        return
+      }
+      
+      console.log('🌱 Database empty, starting seed...')
+      try {
+        await seed(args)
+        console.log('✅ Seed complete!')
+      } catch (error) {
+        console.error('❌ Seed error:', error.message)
+      }
     }
   },
   editor: lexicalEditor({}),

@@ -14,6 +14,13 @@ export const Pages: CollectionConfig = {
   admin: {
     useAsTitle: 'title',
   },
+  versions: {
+    drafts: {
+      autosave: {
+        interval: 375, // Auto-save every 375ms as you type
+      },
+    },
+  },
   fields: [
     {
       name: 'title',

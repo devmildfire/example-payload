@@ -1,0 +1,7 @@
+{
+  "/(payload)/api/[...slug]/route": "app/(payload)/api/[...slug]/route.js",
+  "/(payload)/admin/[[...segments]]/page": "app/(payload)/admin/[[...segments]]/page.js",
+  "/(app)/tenant-slugs/[tenant]/[...slug]/page": "app/(app)/tenant-slugs/[tenant]/[...slug]/page.js",
+  "/(app)/tenant-domains/[tenant]/page": "app/(app)/tenant-domains/[tenant]/page.js",
+  "/(app)/tenant-domains/[tenant]/login/page": "app/(app)/tenant-domains/[tenant]/login/page.js"
+}
