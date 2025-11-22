@@ -1,7 +1,0 @@
-{
-  "/(payload)/api/[...slug]/route": "app/(payload)/api/[...slug]/route.js",
-  "/(payload)/api/preview/route": "app/(payload)/api/preview/route.js",
-  "/(app)/page": "app/(app)/page.js",
-  "/(payload)/admin/[[...segments]]/page": "app/(payload)/admin/[[...segments]]/page.js",
-  "/(app)/tenant-slugs/[tenant]/[...slug]/page": "app/(app)/tenant-slugs/[tenant]/[...slug]/page.js"
-}
